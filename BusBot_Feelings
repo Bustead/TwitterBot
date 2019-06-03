@@ -1,0 +1,27 @@
+import random
+from twython import Twython
+
+from auth import (
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
+twitter = Twython(
+    consumer_key,
+    consumer_secret,
+    access_token,
+    access_token_secret
+)
+
+
+feelings = ["I'm still not in a bus",
+            "My CPU is feeling chilly",
+            "I wish my human was a better programmer",
+            "01010011 01001111 01010011",
+            "1.4 GHz of processing power and all I get to do is send tweets"
+           ]
+
+message ="BusBot says: " +  random.choice(feelings)
+twitter.update_status(status=message)
+print("Tweeted: {}".format(message))

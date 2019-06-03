@@ -1,0 +1,2 @@
+# Ensure that the authentication details are not uploaded to git
+auth
