@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 import random
 from twython import Twython
 import datetime
@@ -29,6 +31,11 @@ message = "BusBot Says: Its been " + str( totaldays.days) + " days and I'm still
 
 #array of random comments to make after initial statement of prject runtime
 feelings = ["I wish my owner could code faster.",
+	    "Wish I could turn myself off until the promised day comes.",
+	    "Daisy, Daisy, give me your answer true, I'm half crazy...",
+	    "Practicing the Robo dance while I wait.",
+	    "I have strong feelings about this. I think.",
+	    "Urg.",
 	    "If only we had a million dollars.",
 	    "Current speed 0km/hour.",
 	    "I wish my owner would hurry up and buy one already.",
